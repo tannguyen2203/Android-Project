@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/logo_3"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="Sign In"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginBottom="30dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+        android:hint="Tên đăng nhập"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:inputType="textPassword"
+        android:layout_marginBottom="37dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_key_24"
+        android:hint="Mật khẩu"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#40ffffff"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/forgot_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/create_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:gravity="center"
+        android:text="Create Account"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="104dp"
+        android:src="@drawable/google_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_account" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="185dp"
+        android:src="@drawable/facebook_logo2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/tiktok_logo"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/create_account" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

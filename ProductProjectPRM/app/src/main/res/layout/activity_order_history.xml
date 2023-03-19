@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderHistoryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="614dp"
+        android:background="@null"
+        android:paddingTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/profile_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/userOrderName"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:background="@color/white"
+                                android:fontFamily="@font/calibri_regular"
+                                android:text="User Name"
+                                android:textColor="#000"
+                                android:textSize="24dp" />
+                            <TextView
+                                android:id="@+id/userOrderPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="User Phone"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/calibri_regular"
+                                android:textColor="#000"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/userOrderAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:textColor="#000"
+                                android:text="Address"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/calibri_regular"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="#f4f4f4f4"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/calibri_regular"
+                            android:text="Order History"
+                            android:textColor="#000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="84dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:background="#688ae2" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="24dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvc_orderHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:background="@color/cornflowerblue"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <ImageView
+            android:id="@+id/homepageOrder"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/ic_baseline_home_work_24" />
+
+        <ImageView
+            android:id="@+id/profileLogin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/ic_baseline_perm_identity_24" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailActivity">
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="360dp">
+                <ImageView
+                    android:id="@+id/imageProductDetail"
+                    android:layout_width="650dp"
+                    android:layout_height="394dp"
+                    android:src="@drawable/t_shirt"
+                    android:scaleType="centerCrop"/>
+
+      <!--          <ImageView
+                    android:background="@color/grey"
+                    android:id="@+id/backProductDetailBtn"
+                    android:layout_width="52dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />-->
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:padding="16dp">
+                <LinearLayout
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nameProductDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/calibri_regular"
+                            android:text="T Shirt Black"
+                            android:textColor="#000"
+                            android:textSize="24dp" />
+                        <TextView
+                            android:id="@+id/priceProductDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="500,000 VND"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/calibri_regular"
+                            android:textColor="#000"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/makerProductDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:textColor="#000"
+                            android:text="Yahmeh Yirin"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/calibri_regular"/>
+                        <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:src="@drawable/four_start"
+                            android:layout_marginTop="-30dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="200dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#dedede"/>
+            <TextView
+                android:id="@+id/descriptionProductDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vải được dệt từ những sợi vải đan xen vào nhau, với mắt vải dệt to tạo nên những hình mắc xích đẹp mắt. Vải có ưu điểm dày dặn, có độ bền cao nên lên form áo rất chuẩn, độ co giãn vừa phải, thấm hút mồ hôi tốt.Tông màu trung tính chủ đạo tạo sự thanh lịch, trẻ trung cho người mặc."
+                android:padding="16dp"
+                android:fontFamily="@font/calibri_regular"
+                android:textColor="#444444"
+                android:textSize="16dp"/>
+            <Button
+                android:id="@+id/btndatmua"
+                android:background="@color/cornflowerblue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="16dp"
+                android:text="Thêm vào giỏ hàng"
+                android:fontFamily="@font/calibri_regular"
+                android:textAllCaps="false"
+                android:textSize="24dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

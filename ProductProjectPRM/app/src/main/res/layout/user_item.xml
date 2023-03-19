@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="15dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="378dp"
+        android:layout_height="331dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="11dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_product"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="-43dp"
+            android:fontFamily="@font/calibri_regular"
+            android:text="User Id"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_product"
+            android:layout_alignStart="@+id/img_product"
+            android:layout_alignBottom="@+id/user_id"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="-34dp"
+            android:fontFamily="@font/calibri_regular"
+            android:text="User name"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/user_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="92dp"
+            android:text="User account"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="60dp"
+            android:text="User Phone"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/user_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="30dp"
+            android:text="User Address"
+            android:textSize="20dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/user_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="User Role"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

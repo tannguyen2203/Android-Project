@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/shoes"
+            android:adjustViewBounds="true"
+            android:layout_margin="5dp"
+            android:id="@+id/imageCart"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/removeCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="X"
+            android:textColor="@color/red"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textViewCartName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giày Nike"
+            android:textColor="#10100f"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewCartPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="500000Đ"
+            android:textColor="#f20"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+          <!--  <Button
+                android:layout_marginRight="10dp"
+                android:focusable="false"
+                android:id="@+id/btnCartMinus"
+                android:text="-"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:background="@null"
+                android:focusable="false"
+                android:id="@+id/btnCartValue"
+                android:text="1"
+                android:layout_marginTop="5dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>
+            <Button
+                android:layout_marginLeft="10dp"
+                android:focusable="false"
+                android:id="@+id/btnCartPlus"
+                android:text="+"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
